@@ -98,11 +98,11 @@ const roadmapItems = ref([
     <!-- Героический раздел -->
     <section class="hero-section">
       <div class="military-overlay"></div>
-      <h1 class="hero-title">ZASHITNIK</h1>
+      <h1 class="hero-title">HERO</h1>
       <p class="hero-subtitle">Токен силы и мощи российской армии</p>
       <div class="cta-buttons">
-        <a href="https://t.me/+tlhLaqT0XAY2YTJi"><button class="primary-btn">Купить токен</button></a>
-        <a href="https://t.me/+w-AWbucuzLE0Yzdi"><button class="secondary-btn">Telegram</button></a>
+        <a href="https://t.me/+8UdwoJLab1Q4MjAy"><button class="primary-btn">Купить токен</button></a>
+        <a href="https://t.me/+EB1tmmJ_nco3YjU6"><button class="secondary-btn">Telegram</button></a>
       </div>
     </section>
 
@@ -180,7 +180,7 @@ const roadmapItems = ref([
   justify-content: center;
   align-items: center;
   position: relative;
-  background: url('/public/23.jpg') center/cover no-repeat;
+  background: url('/233.gif') center/cover no-repeat;
   
   &::before {
     content: '';
