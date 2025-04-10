@@ -26,23 +26,7 @@ onMounted(() => {
 });
 
 // Функция для анимации чисел
-const animateStats = () => {
-  const statValues = document.querySelectorAll('.stat-value');
-  statValues.forEach((statValue) => {
-    const targetNumber = parseInt(statValue.textContent!.replace(/\D/g, ''), 10);
-    gsap.fromTo(statValue, {
-      textContent: 0
-    }, {
-      textContent: targetNumber,
-      duration: 2,
-      ease: 'power1.out',
-      snap: { textContent: 1 },
-      onUpdate: function() {
-        statValue.textContent = Math.floor(this.targets()[0].textContent) + (statValue.textContent!.includes('%') ? '%' : '');
-      }
-    });
-  });
-};
+
 
 
 
