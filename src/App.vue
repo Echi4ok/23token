@@ -19,54 +19,10 @@ onMounted(() => {
     ease: 'power4.out'
   });
 
-  // Анимация графиков
-  gsap.from('.trading-item', {
-    duration: 1.5,
-    x: -200,
-    opacity: 0,
-    stagger: 0.3,
-    scrollTrigger: {
-      trigger: '.trading-section',
-      start: 'top center',
-      end: 'bottom center',
-      toggleActions: 'play none none reverse'
-    }
-  });
 
-  // Анимация статистики
-  gsap.from('.stat-item', {
-    duration: 1,
-    scale: 0,
-    opacity: 0,
-    stagger: 0.2,
-    scrollTrigger: {
-      trigger: '.statistics',
-      start: 'top center'
-    },
-    onComplete: animateStats
-  });
-
-  // Анимация дорожной карты
-  gsap.from('.roadmap-item', {
-    duration: 1.5,
-    x: index => index % 2 === 0 ? -100 : 100,
-    opacity: 0,
-    stagger: 0.3,
-    scrollTrigger: {
-      trigger: '.roadmap',
-      start: 'top center'
-    }
-  });
 
   // Интерактивные элементы
-  document.querySelectorAll('.interactive-element').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      gsap.to(el, { scale: 1.05, duration: 0.3 });
-    });
-    el.addEventListener('mouseleave', () => {
-      gsap.to(el, { scale: 1, duration: 0.3 });
-    });
-  });
+  
 });
 
 // Функция для анимации чисел
